@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hotel Solar da Beira | São Francisco do Sul - Reserva Direta</title>
+<meta name="description" content="Hotel Solar da Beira: 16 anos de tradição à beira da Baía da Babitonga. Quartos com vista, café da manhã incluso, Wi‑Fi e reserva direta.">
+<meta name="keywords" content="hotel São Francisco do Sul, pousada, hotel à beira-mar, Solar da Beira, reserva direta">
+<meta property="og:title" content="Hotel Solar da Beira – Seu hotel à beira-mar em São Francisco do Sul">
+<meta property="og:description" content="Reserve direto e garanta o melhor preço. Café da manhã incluso, Wi‑Fi, pet friendly e localização privilegiada.">
+<meta property="og:image" content="faixada.jpeg">
+<link rel="icon" href="logotransparente.png">
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  .glass { background: rgba(255,255,255,0.75); backdrop-filter: blur(6px); }
+  .primary { background: linear-gradient(90deg,#0ea5e9,#60a5fa); }
+  .sticky-top { position: sticky; top: 0; z-index: 50; }
+  .fixed-bottom { position: fixed; bottom: 10px; right: 10px; z-index: 60; }
+</style>
+</head>
+<body class="antialiased text-slate-800">
+
+<!-- HEADER / MENU -->
+<header class="sticky-top bg-white/90 shadow-sm">
+  <div class="max-w-6xl mx-auto flex items-center justify-between p-3">
+    <img src="logotransparente.png" alt="Hotel Solar da Beira" class="w-36 object-contain"/>
+    <nav class="hidden md:flex items-center gap-6 text-sm">
+      <a href="#home" class="hover:underline">Home</a>
+      <a href="#acomodacoes" class="hover:underline">Acomodações</a>
+      <a href="#restaurante" class="hover:underline">Restaurante</a>
+      <a href="#eventos" class="hover:underline">Eventos</a>
+      <a href="#contato" class="hover:underline">Contato</a>
+    </nav>
+    <div class="hidden md:flex gap-3">
+      <a href="https://hbook.hsystem.com.br/booking?companyId=5fc4f62cab41d41894849261" class="px-4 py-2 bg-amber-500 text-white rounded shadow">Reservar Agora</a>
+      <a href="https://wa.me/5547989103897" target="_blank" class="px-4 py-2 bg-green-500 text-white rounded shadow">WhatsApp</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="home" class="relative h-[80vh]">
+  <img src="faixada.jpeg" alt="Fachada do hotel" class="absolute inset-0 w-full h-full object-cover">
+  <div class="absolute inset-0 bg-black/30"></div>
+  <div class="absolute inset-0 flex items-center">
+    <div class="max-w-6xl mx-auto px-6 text-white">
+      <div class="w-full md:w-2/3 lg:w-1/2 glass p-6 rounded-lg">
+        <h1 class="text-3xl md:text-4xl font-bold">Hotel Solar da Beira</h1>
+        <p class="mt-2 text-sm md:text-base">Seu hotel à beira da Baía da Babitonga — conforto, hospitalidade e a melhor vista do centro histórico.</p>
+
+        <!-- Quick reservation form (HBook) -->
+        <form action="https://hbook.hsystem.com.br/booking?companyId=5fc4f62cab41d41894849261" method="get" class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <input name="checkin" type="date" class="p-2 rounded border" placeholder="Check-in" required />
+          <input name="checkout" type="date" class="p-2 rounded border" placeholder="Check-out" required />
+          <select name="adults" class="p-2 rounded border">
+            <option>1 Adulto</option>
+            <option selected>2 Adultos</option>
+            <option>3 Adultos</option>
+          </select>
+          <select name="children" class="p-2 rounded border">
+            <option>0 Crianças</option>
+            <option>1 Criança</option>
+            <option>2 Crianças</option>
+          </select>
+          <button type="submit" class="sm:col-span-2 mt-2 px-4 py-2 bg-amber-500 rounded text-white font-semibold">Consultar disponibilidade</button>
+        </form>
+
+        <div class="mt-3 flex gap-3">
+          <a href="https://wa.me/5547989103897" target="_blank" class="px-3 py-2 bg-white/10 border border-white rounded">Falar no WhatsApp</a>
+          <a href="#acomodacoes" class="px-3 py-2 bg-white/10 border border-white rounded">Ver acomodações</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ACOMODAÇÕES -->
+<section id="acomodacoes" class="bg-slate-50 py-12">
+  <div class="max-w-6xl mx-auto px-6">
+    <h3 class="text-2xl font-bold">Acomodações</h3>
+    <p class="text-slate-600 mt-2">Quartos confortáveis e preparados para sua melhor estadia.</p>
+    <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Card exemplo -->
+      <article class="bg-white shadow rounded overflow-hidden">
+        <img src="quartoazulescuro9.jpeg" alt="Quarto Luxo" class="w-full h-44 object-cover">
+        <div class="p-4">
+          <h4 class="font-semibold">Quarto Luxo</h4>
+          <p class="text-sm text-slate-600 mt-2">Varanda com vista parcial do mar, cama queen, ar condicionado.</p>
+          <div class="mt-4 flex items-center justify-between">
+            <div class="text-lg font-bold">R$433,80</div>
+            <a href="https://hbook.hsystem.com.br/booking?companyId=5fc4f62cab41d41894849261" class="px-3 py-2 bg-amber-500 text-white rounded">Reservar</a>
+          </div>
+        </div>
+      </article>
+      <!-- Repita cards conforme necessário -->
+    </div>
+  </div>
+</section>
+
+<!-- RESTAURANTE -->
+<section id="restaurante" class="max-w-6xl mx-auto px-6 py-12">
+  <h3 class="text-2xl font-bold">Restaurante & Café da Manhã</h3>
+  <p class="text-slate-600 mt-2">Pratos frescos, ingredientes locais e uma varanda com vista para o mar.</p>
+  <div class="mt-6 grid md:grid-cols-3 gap-4">
+    <img src="cafedamanhamesapaisagem.jpg" alt="Café da manhã" class="w-full h-48 object-cover rounded">
+    <img src="restauranteprato.jpeg" alt="Prato" class="w-full h-48 object-cover rounded">
+    <img src="restaurantebar3.jpg" alt="Bar" class="w-full h-48 object-cover rounded">
+  </div>
+</section>
+
+<!-- EVENTOS -->
+<section id="eventos" class="bg-slate-50 py-12">
+  <div class="max-w-6xl mx-auto px-6">
+    <h3 class="text-2xl font-bold">Eventos</h3>
+    <p class="text-slate-600 mt-2">Sala Superior para até 40 pessoas sentadas e Sala Comum para 20 pessoas.</p>
+    <div class="mt-6 grid md:grid-cols-2 gap-4">
+      <img src="eventosmesas.jpg" alt="Eventos" class="w-full h-56 object-cover rounded">
+      <div class="p-4 bg-white rounded shadow">
+        <h4 class="font-semibold">Peça um orçamento</h4>
+        <p class="text-sm text-slate-600 mt-2">Envie suas datas e necessidades. Resposta em até 24h.</p>
+        <a href="https://wa.me/5547989103897" class="inline-block mt-4 px-4 py-2 bg-amber-500 text-white rounded">Solicitar orçamento</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section id="contato" class="bg-primary text-white py-12">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-6 items-center">
+    <div>
+      <h3 class="text-2xl font-bold">Fale conosco</h3>
+      <p class="mt-2">Rua Comandante Cabo, 95 - Centro Histórico • São Francisco do Sul - SC</p>
+      <p class="mt-2">Tel: <a href="tel:+554734445835" class="underline">+55 (47) 3444-5835</a></p>
+      <p class="mt-1">WhatsApp: <a href="https://wa.me/5547989103897" target="_blank" class="underline">+55 (47) 98910-3897</a></p>
+      <p class="mt-2">Email: <a href="mailto:reservasolardabeira@gmail.com" class="underline">reservasolardabeira@gmail.com</a></p>
+      <div class="mt-4 flex gap-3">
+        <a href="https://www.instagram.com/solardabeirahotel/" target="_blank" class="px-3 py-2 bg-white/10 rounded">Instagram</a>
+        <a href="https://www.facebook.com/" target="_blank" class="px-3 py-2 bg-white/10 rounded">Facebook</a>
+        <a href="https://www.google.com/maps" target="_blank" class="px-3 py-2 bg-white/10 rounded">Ver no Google Maps</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-slate-900 text-white py-6 text-center text-sm">
+  © 2025 Hotel Solar da Beira | Todos os direitos reservados
+</footer>
+
+<!-- WhatsApp flutuante -->
+<a href="https://wa.me/5547989103897" target="_blank" class="fixed-bottom px-4 py-3 bg-green-500 text-white rounded-full shadow-lg text-lg">💬 WhatsApp</a>
+
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click', e=>{
+    e.preventDefault();
+    const id = a.getAttribute('href');
+    if(id === '#') return;
+    document.querySelector(id)?.scrollIntoView({behavior:'smooth', block:'start'});
+  });
+});
+</script>
+
+</body>
+</html>
